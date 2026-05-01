@@ -1,0 +1,38 @@
+<<<<<<< HEAD
+# name of the script
+name : commit logs
+on :
+    push : 
+        branches: ["main"] #main branch
+jobs: # jobs to done
+   build :
+       runs-on: ubuntu-latest
+
+   steps:
+      - name :  checkout code
+          uses : actions/checkout@v4
+
+      - name : Run simple command
+          run : echo " Job done from github actions bot "
+       
+    
+=======
+name : workflow commits 
+
+on :
+  push :
+    branches : [ "main"]
+
+jobs :
+  build :
+    runs-on : ubuntu-latest
+
+    steps :
+      - name : Checkout code
+        uses : actions/checkout@v4
+
+      - name : Run simple command
+        run : echo "Hello from github Actions Done ! "
+
+# this is a comment
+>>>>>>> bf9fa1e ( commit_logs.yml)
