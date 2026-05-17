@@ -1,0 +1,5 @@
+# .gitignore
+
+*.csv
+*.env
+data.json
