@@ -1,3 +1,14 @@
+from pathlib import Path
+import csv
+#importing file 
+path = Path("database/data.csv")
+if not  path.exists() :
+    with open(path,"w",newline="") as file :
+        writer = csv.writer(file(
+        writer.writerow(["Name","Phone_no","Address","Account_no"])
+
+
+
 
 class Bank() :
 	pass
@@ -6,7 +17,7 @@ class Bank() :
 class User(Bank) : 
 	def __init__(self) :
 		pass
-		
+                		
 
 class RegisterUser(User) :
 	def __init__(self) :
@@ -56,7 +67,7 @@ class RegisterUser(User) :
 			
 	def display_user_data(self) :
 		print("name is : " ,  self.name)
-		print(" phone no is :  ",self.phone_no)
+		print("phone no is :  ",self.phone_no)
 		
 		
 		
