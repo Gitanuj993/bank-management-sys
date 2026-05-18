@@ -3,9 +3,9 @@ import csv
 #importing file 
 path = Path("database/data.csv")
 if not  path.exists() :
-        with open(path,"w",newline="") as file :
-                writer = csv.writer(file(
-                writer.writerow(["Name","Phone_no","Address","Account_no"])
+    with open(path,"w",newline="") as file :
+        writer = csv.writer(file(
+        writer.writerow(["Name","Phone_no","Address","Account_no"])
 
 
 
