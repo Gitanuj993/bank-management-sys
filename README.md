@@ -30,3 +30,5 @@ there should be an Admin panel which acts like DASHBOARD for the Admin for analy
 
 
 
+>[!info]
+> Code rabbit Aiis installed to review and comment on the PR and Issue 
